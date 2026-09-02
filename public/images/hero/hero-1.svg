@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <!-- Dégradé ciel crépuscule pour immeuble résidentiel moderne -->
+    <linearGradient id="sky1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f1f3d"/>
+      <stop offset="60%" stop-color="#1a3256"/>
+      <stop offset="100%" stop-color="#2a4a7a"/>
+    </linearGradient>
+    <!-- Éclairage des fenêtres -->
+    <radialGradient id="winGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fffbe0" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#ffd97a" stop-opacity="0.3"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Ciel nocturne -->
+  <rect width="1440" height="900" fill="url(#sky1)"/>
+
+  <!-- Étoiles décoratives -->
+  <circle cx="200" cy="80" r="1.5" fill="white" opacity="0.6"/>
+  <circle cx="450" cy="50" r="1" fill="white" opacity="0.5"/>
+  <circle cx="800" cy="100" r="2" fill="white" opacity="0.4"/>
+  <circle cx="1100" cy="60" r="1.5" fill="white" opacity="0.6"/>
+  <circle cx="1300" cy="90" r="1" fill="white" opacity="0.5"/>
+  <circle cx="350" cy="130" r="1" fill="white" opacity="0.4"/>
+  <circle cx="650" cy="70" r="1.5" fill="white" opacity="0.5"/>
+  <circle cx="950" cy="40" r="1" fill="white" opacity="0.6"/>
+
+  <!-- SOL -->
+  <rect y="750" width="1440" height="150" fill="#0d1a2e"/>
+
+  <!-- Immeuble principal (centre-droit) — tour résidentielle moderne -->
+  <rect x="680" y="150" width="260" height="620" fill="#1a2e4a"/>
+  <!-- Reflets vitrés façade -->
+  <rect x="680" y="150" width="5" height="620" fill="#2a4a7a" opacity="0.5"/>
+  <rect x="930" y="150" width="5" height="620" fill="#2a4a7a" opacity="0.5"/>
+
+  <!-- Fenêtres — tour principale (grille régulière) -->
+  <!-- Rangée 1 -->
+  <rect x="698" y="180" width="50" height="30" rx="2" fill="url(#winGlow)" opacity="0.95"/>
+  <rect x="760" y="180" width="50" height="30" rx="2" fill="#c4a55a" opacity="0.7"/>
+  <rect x="822" y="180" width="50" height="30" rx="2" fill="url(#winGlow)" opacity="0.9"/>
+  <rect x="884" y="180" width="40" height="30" rx="2" fill="#c4a55a" opacity="0.6"/>
+  <!-- Rangée 2 -->
+  <rect x="698" y="230" width="50" height="30" rx="2" fill="#c4a55a" opacity="0.7"/>
+  <rect x="760" y="230" width="50" height="30" rx="2" fill="url(#winGlow)" opacity="0.95"/>
+  <rect x="822" y="230" width="50" height="30" rx="2" fill="#c4a55a" opacity="0.5"/>
+  <rect x="884" y="230" width="40" height="30" rx="2" fill="url(#winGlow)" opacity="0.85"/>
+  <!-- Rangée 3 -->
+  <rect x="698" y="280" width="50" height="30" rx="2" fill="url(#winGlow)" opacity="0.9"/>
+  <rect x="760" y="280" width="50" height="30" rx="2" fill="#c4a55a" opacity="0.6"/>
+  <rect x="822" y="280" width="50" height="30" rx="2" fill="url(#winGlow)" opacity="0.95"/>
+  <rect x="884" y="280" width="40" height="30" rx="2" fill="#c4a55a" opacity="0.7"/>
+  <!-- Rangée 4 -->
+  <rect x="698" y="330" width="50" height="30" rx="2" fill="#c4a55a" opacity="0.5"/>
+  <rect x="760" y="330" width="50" height="30" rx="2" fill="url(#winGlow)" opacity="0.8"/>
+  <rect x="822" y="330" width="50" height="30" rx="2" fill="#1a2744" opacity="0.5"/>
+  <rect x="884" y="330" width="40" height="30" rx="2" fill="url(#winGlow)" opacity="0.9"/>
+  <!-- Rangée 5 -->
+  <rect x="698" y="380" width="50" height="30" rx="2" fill="url(#winGlow)" opacity="0.85"/>
+  <rect x="760" y="380" width="50" height="30" rx="2" fill="#c4a55a" opacity="0.65"/>
+  <rect x="822" y="380" width="50" height="30" rx="2" fill="url(#winGlow)" opacity="0.7"/>
+  <rect x="884" y="380" width="40" height="30" rx="2" fill="url(#winGlow)" opacity="0.95"/>
+  <!-- Rangée 6 -->
+  <rect x="698" y="430" width="50" height="30" rx="2" fill="#c4a55a" opacity="0.6"/>
+  <rect x="760" y="430" width="50" height="30" rx="2" fill="url(#winGlow)" opacity="0.9"/>
+  <rect x="822" y="430" width="50" height="30" rx="2" fill="#c4a55a" opacity="0.7"/>
+  <rect x="884" y="430" width="40" height="30" rx="2" fill="url(#winGlow)" opacity="0.8"/>
+
+  <!-- Toit plat avec parapet -->
+  <rect x="670" y="135" width="280" height="18" rx="3" fill="#253d5e"/>
+
+  <!-- Immeuble secondaire gauche -->
+  <rect x="380" y="280" width="200" height="490" fill="#152236"/>
+  <!-- Fenêtres immeuble gauche -->
+  <rect x="395" y="310" width="36" height="24" rx="2" fill="#c4a55a" opacity="0.6"/>
+  <rect x="440" y="310" width="36" height="24" rx="2" fill="url(#winGlow)" opacity="0.8"/>
+  <rect x="485" y="310" width="36" height="24" rx="2" fill="#c4a55a" opacity="0.5"/>
+  <rect x="530" y="310" width="36" height="24" rx="2" fill="url(#winGlow)" opacity="0.85"/>
+  <rect x="395" y="355" width="36" height="24" rx="2" fill="url(#winGlow)" opacity="0.9"/>
+  <rect x="440" y="355" width="36" height="24" rx="2" fill="#c4a55a" opacity="0.7"/>
+  <rect x="485" y="355" width="36" height="24" rx="2" fill="url(#winGlow)" opacity="0.75"/>
+  <rect x="530" y="355" width="36" height="24" rx="2" fill="#c4a55a" opacity="0.55"/>
+  <rect x="395" y="400" width="36" height="24" rx="2" fill="#c4a55a" opacity="0.6"/>
+  <rect x="440" y="400" width="36" height="24" rx="2" fill="url(#winGlow)" opacity="0.85"/>
+  <rect x="485" y="400" width="36" height="24" rx="2" fill="#c4a55a" opacity="0.65"/>
+  <rect x="530" y="400" width="36" height="24" rx="2" fill="url(#winGlow)" opacity="0.9"/>
+  <rect x="395" y="445" width="36" height="24" rx="2" fill="url(#winGlow)" opacity="0.8"/>
+  <rect x="440" y="445" width="36" height="24" rx="2" fill="#c4a55a" opacity="0.5"/>
+  <rect x="485" y="445" width="36" height="24" rx="2" fill="url(#winGlow)" opacity="0.75"/>
+  <rect x="530" y="445" width="36" height="24" rx="2" fill="#c4a55a" opacity="0.7"/>
+
+  <!-- Immeuble secondaire droite -->
+  <rect x="1000" y="320" width="220" height="450" fill="#152236"/>
+  <!-- Fenêtres droite -->
+  <rect x="1015" y="350" width="38" height="25" rx="2" fill="url(#winGlow)" opacity="0.85"/>
+  <rect x="1063" y="350" width="38" height="25" rx="2" fill="#c4a55a" opacity="0.6"/>
+  <rect x="1111" y="350" width="38" height="25" rx="2" fill="url(#winGlow)" opacity="0.9"/>
+  <rect x="1159" y="350" width="40" height="25" rx="2" fill="#c4a55a" opacity="0.7"/>
+  <rect x="1015" y="395" width="38" height="25" rx="2" fill="#c4a55a" opacity="0.55"/>
+  <rect x="1063" y="395" width="38" height="25" rx="2" fill="url(#winGlow)" opacity="0.8"/>
+  <rect x="1111" y="395" width="38" height="25" rx="2" fill="#c4a55a" opacity="0.65"/>
+  <rect x="1159" y="395" width="40" height="25" rx="2" fill="url(#winGlow)" opacity="0.95"/>
+  <rect x="1015" y="440" width="38" height="25" rx="2" fill="url(#winGlow)" opacity="0.75"/>
+  <rect x="1063" y="440" width="38" height="25" rx="2" fill="#c4a55a" opacity="0.7"/>
+  <rect x="1111" y="440" width="38" height="25" rx="2" fill="url(#winGlow)" opacity="0.85"/>
+  <rect x="1159" y="440" width="40" height="25" rx="2" fill="#c4a55a" opacity="0.5"/>
+
+  <!-- Petits bâtiments fond (silhouettes) -->
+  <rect x="50" y="520" width="120" height="250" fill="#0e1c30"/>
+  <rect x="1280" y="480" width="160" height="290" fill="#0e1c30"/>
+  <rect x="200" y="600" width="80" height="170" fill="#0e1c30"/>
+  <rect x="1200" y="580" width="75" height="190" fill="#0e1c30"/>
+
+  <!-- Reflet lune sur sol -->
+  <ellipse cx="720" cy="755" rx="200" ry="8" fill="#2a4a7a" opacity="0.3"/>
+
+  <!-- Éclairage de rue (cônes de lumière) -->
+  <ellipse cx="300" cy="752" rx="60" ry="5" fill="#c4a55a" opacity="0.15"/>
+  <ellipse cx="1140" cy="752" rx="60" ry="5" fill="#c4a55a" opacity="0.15"/>
+</svg>

@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ═══════════════════════════════════════════
+   VARIABLES CSS GLOBALES
+   ═══════════════════════════════════════════ */
+:root {
+  /* Palette principale */
+  --color-navy: #1a2744;
+  --color-navy-light: #243156;
+  --color-gold: #c9a961;
+  --color-gold-light: #d4b87a;
+  --color-white: #ffffff;
+  --color-gray-light: #f5f5f5;
+
+  /* Typographie */
+  --font-serif: var(--font-playfair, "Georgia", serif);
+  --font-sans: var(--font-inter, "system-ui", sans-serif);
+
+  /* Espacement sections */
+  --section-padding-y: clamp(4rem, 8vw, 7rem);
+  --container-max: 1280px;
+  --container-px: clamp(1rem, 4vw, 2rem);
+}
+
+/* ═══════════════════════════════════════════
+   SÉLECTION DE TEXTE (couleur marque)
+   ═══════════════════════════════════════════ */
+::selection {
+  background-color: #d4b876; /* couleur accent dorée */
+  color: #1a2744; /* texte foncé pour bon contraste sur fond doré */
+}
+
+::-moz-selection {
+  background-color: #d4b876;
+  color: #1a2744;
+}
+
+/* ═══════════════════════════════════════════
+   RESET & BASE
+   ═══════════════════════════════════════════ */
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    /* Navigation au scroll douce */
+    scroll-behavior: smooth;
+    /* Empêche le débordement horizontal */
+    overflow-x: hidden;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: var(--color-navy);
+    background-color: var(--color-white);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  /* === FOCUS STATES VISIBLES (Accessibilité) === */
+  :focus-visible {
+    outline: 3px solid var(--color-gold);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  /* Titres avec police serif */
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-serif);
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--color-navy);
+  }
+
+  h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+  }
+
+  h2 {
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+  }
+
+  h3 {
+    font-size: clamp(1.25rem, 2vw, 1.5rem);
+  }
+
+  /* Liens */
+  a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  /* Images responsives par défaut */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* ═══════════════════════════════════════════
+   COMPOSANTS RÉUTILISABLES
+   ═══════════════════════════════════════════ */
+@layer components {
+  /* Container responsive principal */
+  .container-site {
+    width: 100%;
+    max-width: var(--container-max);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--container-px);
+    padding-right: var(--container-px);
+  }
+
+  /* Section avec espacement cohérent */
+  .section {
+    padding-top: var(--section-padding-y);
+    padding-bottom: var(--section-padding-y);
+  }
+
+  /* Badge doré (label en majuscules) */
+  .badge-gold {
+    @apply inline-block px-4 py-1.5 text-xs font-bold tracking-widest uppercase;
+    color: var(--color-gold);
+    border: 1px solid var(--color-gold);
+    border-radius: 2px;
+    letter-spacing: 0.12em;
+  }
+
+  /* Bouton primaire (fond doré) */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 font-semibold rounded-sm transition-all duration-200;
+    background-color: var(--color-gold);
+    color: var(--color-navy);
+    font-family: var(--font-sans);
+    border: 2px solid var(--color-gold);
+  }
+
+  .btn-primary:hover {
+    background-color: var(--color-gold-light);
+    border-color: var(--color-gold-light);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 20px rgba(201, 169, 97, 0.35);
+  }
+
+  .btn-primary:focus-visible {
+    outline: 3px solid var(--color-white);
+    outline-offset: 3px;
+  }
+
+  /* Bouton secondaire (contour blanc) */
+  .btn-outline-white {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 font-semibold rounded-sm transition-all duration-200;
+    background-color: transparent;
+    color: var(--color-white);
+    border: 2px solid var(--color-white);
+    font-family: var(--font-sans);
+  }
+
+  .btn-outline-white:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+    transform: translateY(-1px);
+  }
+
+  /* Ligne décorative sous titre de section */
+  .section-divider {
+    @apply block w-16 h-1 mt-3 mb-6;
+    background-color: var(--color-gold);
+    border-radius: 2px;
+  }
+
+  /* Card de service */
+  .service-card {
+    @apply p-6 rounded-lg bg-white border border-gray-100 transition-all duration-300;
+    box-shadow: 0 4px 24px rgba(26, 39, 68, 0.06);
+  }
+
+  .service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 40px rgba(26, 39, 68, 0.14);
+    border-color: var(--color-gold);
+  }
+}
+
+/* ═══════════════════════════════════════════
+   UTILITAIRES PERSONNALISÉS
+   ═══════════════════════════════════════════ */
+@layer utilities {
+  /* Overlay dégradé hero */
+  .hero-overlay {
+    background: linear-gradient(
+      105deg,
+      rgba(26, 39, 68, 0.82) 0%,
+      rgba(26, 39, 68, 0.55) 55%,
+      rgba(26, 39, 68, 0.2) 100%
+    );
+  }
+
+  /* Texte avec gradient doré */
+  .text-gradient-gold {
+    background: linear-gradient(135deg, #c9a961 0%, #d4b87a 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Cache l'élément mais garde accessible aux lecteurs d'écran */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+
+  /* Scroll snap pour le carousel */
+  .snap-x-mandatory {
+    scroll-snap-type: x mandatory;
+    overflow-x: hidden;
+  }
+
+  .snap-start {
+    scroll-snap-align: start;
+  }
+}
+
+/* ═══════════════════════════════════════════
+   ANIMATIONS GLOBALES
+   ═══════════════════════════════════════════ */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Barre de progression du carousel */
+@keyframes carouselProgress {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.carousel-progress {
+  animation: carouselProgress 6s linear forwards;
+  transform-origin: left;
+}
+
+/* Réduction des animations si préférence utilisateur */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+
+
+/* Animations from code.html */
+.marquee {
+    white-space: nowrap;
+    overflow: hidden;
+    display: flex;
+}
+.marquee-content {
+    display: flex;
+    animation: marquee 20s linear infinite;
+}
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* Horizontal Accordion Styles */
+.h-accordion {
+    display: flex;
+    height: 400px;
+    gap: 1rem;
+}
+.h-accordion-panel {
+    flex: 1;
+    transition: all 0.5s ease;
+    overflow: hidden;
+    border-radius: 1rem;
+    position: relative;
+    cursor: pointer;
+    background: #f5f3f6;
+    border: 1px solid #e4e2e5;
+}
+.h-accordion:hover .h-accordion-panel {
+    flex: 1;
+}
+.h-accordion:hover .h-accordion-panel:hover,
+.h-accordion:not(:hover) .h-accordion-panel:first-child {
+    flex: 4;
+    background: #1d4ed8;
+    border-color: #1d4ed8;
+}
+
+/* Content inside panels */
+.h-accordion-active-content {
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    pointer-events: none;
+}
+.h-accordion:hover .h-accordion-panel:hover .h-accordion-active-content,
+.h-accordion:not(:hover) .h-accordion-panel:first-child .h-accordion-active-content {
+    opacity: 1;
+    pointer-events: auto;
+    transition-delay: 0.2s;
+}
+
+/* Collapsed state vertical title */
+.h-accordion-collapsed-content {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+}
+.h-accordion:hover .h-accordion-panel:hover .h-accordion-collapsed-content,
+.h-accordion:not(:hover) .h-accordion-panel:first-child .h-accordion-collapsed-content {
+    opacity: 0;
+    pointer-events: none;
+}
+.vertical-text {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    white-space: nowrap;
+}
