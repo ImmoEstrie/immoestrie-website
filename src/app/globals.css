@@ -292,7 +292,7 @@
 
 
 
-/* Animations from code.html */
+/* TopBar marquee - défilement fluide + pause au survol */
 .marquee {
     white-space: nowrap;
     overflow: hidden;
@@ -300,11 +300,66 @@
 }
 .marquee-content {
     display: flex;
-    animation: marquee 20s linear infinite;
+    animation: marquee 25s linear infinite;
+}
+.marquee:hover .marquee-content {
+    animation-play-state: paused;
 }
 @keyframes marquee {
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
+}
+
+/* Effet de soulignement animé sur les liens de navigation — .nav-link (2px) et .link-underline (1.5px) réutilisable */
+.nav-link {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  padding-bottom: 4px;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.link-underline {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  padding-bottom: 2px;
+}
+
+.link-underline::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1.5px;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+}
+
+.link-underline:hover::after {
+  width: 100%;
+}
+
+/* Curseur personnalisé — caché sur mobile et si reduced-motion */
+@media (hover: none), (pointer: coarse) {
+  .cursor-follower {
+    display: none !important;
+  }
 }
 
 /* Horizontal Accordion Styles */

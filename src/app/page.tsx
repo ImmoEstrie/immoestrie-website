@@ -1,6 +1,7 @@
 // === PAGE PRINCIPALE ===
 // Assemble toutes les sections du site dans l'ordre
 
+import TopBar from "@/components/layout/TopBar";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import HeroCarousel from "@/components/sections/HeroCarousel";
@@ -17,10 +18,13 @@ import ChatWidget from "@/components/ui/ChatWidget";
 export default function HomePage() {
   return (
     <>
-      {/* En-tête de navigation sticky */}
+      {/* Barre de contact + navigation sticky */}
+      <TopBar />
       <header>
         <Navbar />
       </header>
+      {/* Spacer pour compenser les 2 barres fixed (36px + ~72px) */}
+      <div className="h-9 w-full shrink-0" aria-hidden="true" />
 
       {/* Contenu principal */}
       <main id="contenu-principal">

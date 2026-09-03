@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# immoestrie-website
-Site web officiel d’ImmoEstrie, développé avec Next.js et Sanity CMS. Projet actuellement en cours de développement.
-=======
 # 🏢 Gestion Immobilière de l'Estrie — Site Web
 
 Site vitrine professionnel pour **Gestion Immobilière de l'Estrie**, entreprise québécoise de gestion d'immeubles locatifs et de copropriétés basée à Sherbrooke.

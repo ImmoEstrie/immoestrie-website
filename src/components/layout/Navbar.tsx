@@ -7,9 +7,9 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-sm border-b-0">
+    <header className="fixed top-9 w-full z-50 bg-surface/90 backdrop-blur-md shadow-sm border-b-0">
       <div className="relative flex justify-between items-center w-full px-4 md:px-8 xl:px-12 py-4 mx-auto">
-        <div className="flex items-center gap-3 z-10">
+        <a href="/#accueil" className="flex items-center gap-3 z-10 hover:opacity-80 transition-opacity">
           <Image
             alt="Logo Gestion Immobilière de l'Estrie"
             className="h-10 w-10 md:h-12 md:w-12 object-contain"
@@ -21,23 +21,23 @@ export default function Navbar() {
             <span className="text-primary">Gestion immobilière</span>
             <span className="text-on-surface-variant">de l'Estrie</span>
           </div>
-        </div>
+        </a>
         
         {/* Centered Navigation */}
         <nav className="absolute left-1/2 -translate-x-1/2 hidden lg:flex gap-6 xl:gap-8 items-center z-10">
-          <a className="text-on-surface-variant hover:text-accent-gold-dark transition-all font-label-md text-label-md" href="#services">
+          <a className="link-underline text-on-surface-variant hover:text-accent-gold-dark transition-colors font-label-md text-label-md" href="#services">
             Services
           </a>
-          <a className="text-on-surface-variant hover:text-accent-gold-dark transition-all font-label-md text-label-md" href="#a-propos">
+          <a className="link-underline text-on-surface-variant hover:text-accent-gold-dark transition-colors font-label-md text-label-md" href="#a-propos">
             À propos
           </a>
-          <a className="text-on-surface-variant hover:text-accent-gold-dark transition-all font-label-md text-label-md" href="#pourquoi-nous">
+          <a className="link-underline text-on-surface-variant hover:text-accent-gold-dark transition-colors font-label-md text-label-md" href="#pourquoi-nous">
             Pourquoi nous
           </a>
-          <a className="text-on-surface-variant hover:text-accent-gold-dark transition-all font-label-md text-label-md" href="#locataires">
+          <a className="link-underline text-on-surface-variant hover:text-accent-gold-dark transition-colors font-label-md text-label-md" href="#locataires">
             Locataires
           </a>
-          <a className="text-on-surface-variant hover:text-accent-gold-dark transition-all font-label-md text-label-md" href="#contact">
+          <a className="link-underline text-on-surface-variant hover:text-accent-gold-dark transition-colors font-label-md text-label-md" href="#contact">
             Contact
           </a>
         </nav>
@@ -46,7 +46,9 @@ export default function Navbar() {
         <div className="hidden lg:flex items-center gap-6 z-10">
           <a
             className="text-primary hover:text-accent-gold-dark font-label-md text-label-md transition-colors inline-flex items-center gap-1"
-            href="#portail"
+            href="https://dashboard.plexflow.ca/app/en"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Accéder au portail
             <span className="material-symbols-outlined text-[18px]">arrow_outward</span>
@@ -69,10 +71,10 @@ export default function Navbar() {
       {/* Mobile Menu Content (Basic implementation) */}
       {isOpen && (
         <div className="md:hidden bg-surface p-4 flex flex-col gap-4 shadow-lg absolute w-full left-0 top-full">
-          <a href="#services" onClick={() => setIsOpen(false)}>Services</a>
-          <a href="#pourquoi-nous" onClick={() => setIsOpen(false)}>Pourquoi nous</a>
-          <a href="#faq" onClick={() => setIsOpen(false)}>FAQ</a>
-          <a href="#contact" onClick={() => setIsOpen(false)}>Contact</a>
+          <a className="link-underline w-fit" href="#services" onClick={() => setIsOpen(false)}>Services</a>
+          <a className="link-underline w-fit" href="#pourquoi-nous" onClick={() => setIsOpen(false)}>Pourquoi nous</a>
+          <a className="link-underline w-fit" href="#faq" onClick={() => setIsOpen(false)}>FAQ</a>
+          <a className="link-underline w-fit" href="#contact" onClick={() => setIsOpen(false)}>Contact</a>
           <a href="#soumission" className="text-accent-gold-dark font-bold" onClick={() => setIsOpen(false)}>Obtenir une soumission</a>
         </div>
       )}

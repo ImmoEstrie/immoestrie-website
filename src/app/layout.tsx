@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
+import SplashWrapper from "@/components/layout/SplashWrapper";
+import CursorFollower from "@/components/ui/CursorFollower";
+import ScrollToTop from "@/components/ui/ScrollToTop";
 
 // ─────────────────────────────────────────────
 // CONFIGURATION DES POLICES GOOGLE
@@ -113,8 +116,10 @@ export default function RootLayout({
           Aller au contenu principal
         </a>
 
+        <CursorFollower />
+        <ScrollToTop />
         {/* Contenu de la page */}
-        {children}
+      <SplashWrapper>{children}</SplashWrapper>
       </body>
     </html>
   );

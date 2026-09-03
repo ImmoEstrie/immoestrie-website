@@ -57,6 +57,9 @@ const config: Config = {
         "slide-in-right": "slideInRight 0.4s ease-out",
         "count-up": "countUp 1s ease-out",
       },
+      maxWidth: {
+        "container-max": "1280px",
+      },
       keyframes: {
         fadeIn: {
           "0%": { opacity: "0" },
