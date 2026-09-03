@@ -99,6 +99,42 @@ export default function Footer() {
             <span className="material-symbols-outlined text-[16px]">open_in_new</span>
           </a>
 
+          {/* Réseaux sociaux — couleurs officielles */}
+          <div className="flex items-center gap-3 mt-2">
+            {/* Facebook */}
+            <a
+                href="https://www.facebook.com/profile.php?id=100095206657906"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              className="flex items-center justify-center w-9 h-9 rounded-full overflow-hidden hover:scale-110 transition-transform"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="36" height="36">
+                <rect width="48" height="48" rx="12" fill="#1877F2" />
+                <path
+                  fill="#fff"
+                  d="M31.5 25.5l.9-5.6h-5.4v-3.6c0-1.5.75-3 3.15-3h2.44v-4.8s-2.2-.38-4.32-.38c-4.4 0-7.28 2.67-7.28 7.5v4.24H16v5.6h5.99V44c1.2.19 2.43.29 3.68.29s2.48-.1 3.68-.29V25.5h4.15Z"
+                />
+              </svg>
+            </a>
+
+            {/* Instagram */}
+            <a
+             href="https://www.instagram.com/gestion_immo_estrie/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              className="flex items-center justify-center w-15 h-15 rounded-full overflow-hidden hover:scale-110 transition-transform"
+            >
+              <Image
+                src="/images/instagram-image.png"
+                alt="Instagram"
+                width={44}
+                height={44}
+                className="object-contain"
+              />
+            </a>
+          </div>
         </div>
       </div>
       <div className="relative z-10 max-w-container-max mx-auto px-margin-desktop pt-8 border-t border-white/10">
