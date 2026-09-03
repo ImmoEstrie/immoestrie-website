@@ -9,7 +9,7 @@ export default function SplashWrapper({ children }: { children: React.ReactNode 
   return (
     <>
       {children}
-      {!done && <SplashScreen onComplete={() => setDone(true)} duration={4500} />}
+      {!done && <SplashScreen onComplete={() => setDone(true)} duration={800} />}
     </>
   );
 }

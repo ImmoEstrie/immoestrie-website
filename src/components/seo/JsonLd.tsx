@@ -33,14 +33,6 @@ export function getOrganizationJsonLd() {
       areaServed: "CA",
       availableLanguage: ["fr-CA"],
     },
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: "123 rue King Ouest",
-      addressLocality: "Sherbrooke",
-      addressRegion: "QC",
-      postalCode: "J1H 1P8",
-      addressCountry: "CA",
-    },
   };
 }
 
@@ -54,14 +46,6 @@ export function getLocalBusinessJsonLd() {
     telephone: "+1-819-975-4599",
     email: "info@immoestrie.ca",
     priceRange: "$$",
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: "123 rue King Ouest",
-      addressLocality: "Sherbrooke",
-      addressRegion: "QC",
-      postalCode: "J1H 1P8",
-      addressCountry: "CA",
-    },
     geo: {
       "@type": "GeoCoordinates",
       latitude: 45.401,

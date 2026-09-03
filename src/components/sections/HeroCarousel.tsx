@@ -3,9 +3,19 @@
 import { useState, useEffect } from "react";
 
 const slides = [
-  "/images/image-hero-1.png",
-  "/images/image-hero-2.png",
-  "/images/image-hero-3.png",
+  "/images/hero/imag1-hero.jpg",
+  "/images/hero/imag 2-hero.jpg",
+  "/images/hero/imag 3-hero.jpg",
+  "/images/hero/imag 4-hero.jpg",
+  "/images/hero/imag 5-hero.jpg",
+  "/images/hero/imag 6-hero.jpg",
+  "/images/hero/imag 7-hero.jpg",
+  "/images/hero/imag 8-hero.jpg",
+  "/images/hero/imag 9-hero.jpg",
+  "/images/hero/imag 10-hero.jpg",
+  "/images/hero/imag 11-hero.jpg",
+  "/images/hero/imag 12-hero.jpg",
+  "/images/hero/imag 13-hero.jpg",
 ];
 
 export default function HeroCarousel() {
@@ -17,6 +27,12 @@ export default function HeroCarousel() {
     }, 4000);
     return () => clearInterval(slideInterval);
   }, []);
+      useEffect(() => {
+      slides.forEach((src) => {
+        const img = new Image();
+        img.src = src;
+      });
+    }, []);
 
   return (
     <div className="relative pt-32 pb-24 md:pt-48 md:pb-32 flex items-center min-h-screen bg-black overflow-hidden w-full">
@@ -66,21 +82,21 @@ export default function HeroCarousel() {
         </div>
       </div>
 
-      {/* Carousel Dots */}
-      <div className="absolute bottom-32 left-1/2 -translate-x-1/2 flex gap-3 z-30">
-        {slides.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentSlide(index)}
-            className={`h-3 rounded-full transition-all duration-300 ${
-              index === currentSlide
-                ? "w-8 bg-accent-gold-dark"
-                : "w-3 bg-[#B0B0B0] hover:bg-[#D9D9D9]"
-            }`}
-            aria-label={`Aller à la diapositive ${index + 1}`}
-          />
-        ))}
-      </div>
+      {/* Carousel Dots — discrets, bas du hero */}
+      {slides.length > 1 && (
+        <div className="absolute bottom-6 md:bottom-8 left-1/2 -translate-x-1/2 flex gap-2 z-30">
+          {slides.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentSlide(index)}
+              className={`rounded-full transition-all duration-300 ${
+                index === currentSlide ? "w-2 h-2 bg-white" : "w-1.5 h-1.5 bg-white/50 hover:bg-white/80"
+              }`}
+              aria-label={`Aller à l'image ${index + 1}`}
+            />
+          ))}
+        </div>
+      )}
 
       {/* Scroll Button */}
       <div className="absolute bottom-8 right-8 md:right-16 z-30">

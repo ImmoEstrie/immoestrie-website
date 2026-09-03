@@ -23,20 +23,14 @@ export default function ConditionsUtilisationPage() {
         {/* Hero */}
         <section className="bg-surface w-full border-b border-surface-variant/50">
           <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-16 md:py-24">
-            <div className="max-w-3xl">
-              <h1 className="font-display-lg text-[2.5rem] md:text-[3.5rem] leading-[1.15] tracking-tight font-bold text-[#1a2744] mb-4">
+            <div className="max-w-3xl mx-auto text-center">
+              <h1 className="ml-2 font-display-lg text-[2.5rem] md:text-[3.5rem] leading-[1.15] tracking-tight font-bold text-[#1a2744] mb-4">
                 Conditions <span className="text-primary">d&apos;utilisation</span>
               </h1>
-              <p className="font-body-lg text-body-lg text-on-surface-variant leading-relaxed max-w-2xl">
+              <p className="ml-12 font-body-lg text-body-lg text-on-surface-variant leading-relaxed max-w-2xl">
                 En naviguant sur notre site et en utilisant nos services, vous acceptez les présentes conditions —
                 conçues pour protéger à la fois vos intérêts et les nôtres, en toute clarté.
               </p>
-              <div className="flex items-center gap-3 mt-8 pt-6 border-t border-outline-variant/30">
-                <span className="w-2 h-2 rounded-full bg-accent-gold-dark" aria-hidden="true" />
-                <p className="font-label-md text-label-sm text-on-surface-variant">
-                  En vigueur depuis : <span className="font-semibold text-[#1a2744]">2 septembre 2026</span>
-                </p>
-              </div>
             </div>
           </div>
         </section>
@@ -63,7 +57,7 @@ export default function ConditionsUtilisationPage() {
                   </h2>
                   <div className="w-12 h-[3px] bg-accent-gold-dark rounded-full mb-6" aria-hidden="true" />
                   <p>
-                    L&apos;accès au site <span className="font-semibold text-[#1a2744]">gestionestrie.ca</span> et
+                    L&apos;accès au site <span className="font-semibold text-[#1a2744]">immoestrie.ca</span> et
                     l&apos;utilisation de nos services (demande de soumission, portail Plexflow, formulaires) impliquent
                     votre adhésion sans réserve aux présentes conditions. Nous pouvons les mettre à jour à tout moment;
                     la version en ligne prévaut.
@@ -138,13 +132,11 @@ export default function ConditionsUtilisationPage() {
                   <div className="w-12 h-[3px] bg-accent-gold-dark rounded-full mb-6" aria-hidden="true" />
                   <p>
                     Les présentes conditions sont régies par les lois du Québec et du Canada. Tout litige relève des
-                    tribunaux compétents du district de Sherbrooke. Pour nous joindre :
+                    tribunaux compétents du district de Saint-François. Pour nous joindre :
                   </p>
                   <div className="bg-[#1a2744] text-white rounded-2xl p-6 md:p-8 mt-6">
                     <p className="font-headline-md text-lg font-bold text-white">Gestion Immobilière de l&apos;Estrie</p>
                     <p className="font-body-md text-body-sm text-white/70 mt-2">
-                      123 rue King Ouest, Sherbrooke, QC J1H 1P8
-                      <br />
                       <a href="mailto:info@immoestrie.ca" className="text-accent-gold-dark hover:underline">
                         info@immoestrie.ca
                       </a>{" "}

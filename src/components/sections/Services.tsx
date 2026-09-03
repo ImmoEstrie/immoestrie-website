@@ -243,6 +243,12 @@ export default function Services() {
                     plus qu&apos;à profiter des résultats.
                   </p>
                   <div className="w-14 h-[3px] bg-accent-gold-dark mt-8 rounded-full" />
+                  <div className="mt-8">
+                    <span className="text-4xl md:text-5xl font-bold text-primary">100+</span>
+                    <p className="text-sm md:text-base text-on-surface-variant mt-1">
+                      portes gérées
+                    </p>
+                  </div>
                 </div>
 
                 {/* Droite : stack de cartes */}
@@ -279,10 +285,17 @@ export default function Services() {
           <br />
           <span className="text-primary">du loyer à l&apos;entretien.</span>
         </h2>
-        <p className="text-[#0d1117]/60 mb-10 leading-relaxed text-[16px] md:text-[17px]">
+        <p className="text-[#0d1117]/60 leading-relaxed text-[16px] md:text-[17px]">
           De la perception des loyers à l&apos;entretien de vos bâtiments, nous
           prenons en charge chaque aspect de la gestion de vos immeubles.
         </p>
+        <div className="w-14 h-[3px] bg-accent-gold-dark mt-6 rounded-full" />
+        <div className="mt-6 mb-10">
+          <span className="text-4xl font-bold text-primary">100+</span>
+          <p className="text-sm text-on-surface-variant mt-1">
+            portes gérées
+          </p>
+        </div>
 
         <div className="flex flex-col gap-5">
           {services.map((service, i) => {

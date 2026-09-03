@@ -292,24 +292,6 @@
 
 
 
-/* TopBar marquee - défilement fluide + pause au survol */
-.marquee {
-    white-space: nowrap;
-    overflow: hidden;
-    display: flex;
-}
-.marquee-content {
-    display: flex;
-    animation: marquee 25s linear infinite;
-}
-.marquee:hover .marquee-content {
-    animation-play-state: paused;
-}
-@keyframes marquee {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-}
-
 /* Effet de soulignement animé sur les liens de navigation — .nav-link (2px) et .link-underline (1.5px) réutilisable */
 .nav-link {
   position: relative;

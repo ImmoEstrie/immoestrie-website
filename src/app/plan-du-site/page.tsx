@@ -84,21 +84,14 @@ export default function PlanDuSitePage() {
         {/* Hero */}
         <section className="bg-surface w-full border-b border-surface-variant/50">
           <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-16 md:py-24">
-            <div className="max-w-3xl">
-              <h1 className="font-display-lg text-[2.5rem] md:text-[3.5rem] leading-[1.15] tracking-tight font-bold text-[#1a2744] mb-4">
+            <div className="max-w-3xl mx-auto text-center">
+              <h1 className="ml-1 font-display-lg text-[2.5rem] md:text-[3.5rem] leading-[1.15] tracking-tight font-bold text-[#1a2744] mb-4">
                 Plan du <span className="text-primary">site</span>
               </h1>
-              <p className="font-body-lg text-body-lg text-on-surface-variant leading-relaxed max-w-2xl">
+              <p className="ml-10 font-body-lg text-body-lg text-on-surface-variant leading-relaxed max-w-2xl">
                 Accédez rapidement à l&apos;ensemble des contenus — pensé comme une carte claire de notre site, à
                 l&apos;image de notre gestion : structurée et transparente.
               </p>
-              <div className="flex items-center gap-3 mt-8 pt-6 border-t border-outline-variant/30">
-                <span className="w-2 h-2 rounded-full bg-accent-gold-dark" aria-hidden="true" />
-                <p className="font-label-md text-label-sm text-on-surface-variant">
-                  {sitemap.length} sections principales • Mise à jour{" "}
-                  <span className="font-semibold text-[#1a2744]">septembre 2026</span>
-                </p>
-              </div>
             </div>
           </div>
         </section>

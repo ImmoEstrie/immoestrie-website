@@ -23,21 +23,15 @@ export default function PolitiqueConfidentialitePage() {
         {/* Hero */}
         <section className="bg-surface w-full border-b border-surface-variant/50">
           <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop pt-16 pb-16 md:pt-24 md:pb-24">
-            <div className="max-w-3xl">
-              <h1 className="font-display-lg text-[2.5rem] md:text-[3.5rem] leading-[1.15] tracking-tight font-bold text-[#1a2744] mb-4">
+            <div className="max-w-3xl mx-auto text-center">
+              <h1 className="ml-5 font-display-lg text-[2.5rem] md:text-[3.5rem] leading-[1.15] tracking-tight font-bold text-[#1a2744] mb-4">
                 Politique de <span className="text-primary">confidentialité</span>
               </h1>
-              <p className="font-body-lg text-body-lg text-on-surface-variant leading-relaxed max-w-2xl">
+              <p className="ml-14  font-body-lg text-body-lg text-on-surface-variant leading-relaxed max-w-2xl">
                 Votre vie privée est au cœur de notre engagement. Cette politique explique quelles données nous
                 collectons, pourquoi, et comment nous les protégeons — en toute transparence, conformément à la
                 Loi 25 du Québec.
               </p>
-              <div className="flex items-center gap-3 mt-8 pt-6 border-t border-outline-variant/30">
-                <span className="w-2 h-2 rounded-full bg-accent-gold-dark" aria-hidden="true" />
-                <p className="font-label-md text-label-sm text-on-surface-variant">
-                  Dernière mise à jour : <span className="font-semibold text-[#1a2744]">2 septembre 2026</span> • Sherbrooke, QC
-                </p>
-              </div>
             </div>
           </div>
         </section>
@@ -168,20 +162,7 @@ export default function PolitiqueConfidentialitePage() {
                       Conformément à la Loi 25, vous disposez d&apos;un droit d&apos;accès, de rectification, de retrait de
                       votre consentement et de plainte auprès de la Commission d&apos;accès à l&apos;information.
                     </p>
-                    <div className="mt-6 flex flex-col sm:flex-row gap-3">
-                      <a
-                        href="mailto:info@immoestrie.ca?subject=Demande%20confidentialité"
-                        className="inline-flex items-center justify-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-label-md text-label-md font-semibold hover:bg-[#1e40af] transition-colors"
-                      >
-                        Exercer mes droits <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
-                      </a>
-                      <a
-                        href="/plan-du-site"
-                        className="inline-flex items-center justify-center gap-2 border border-outline-variant text-[#1a2744] px-6 py-3 rounded-lg font-label-md text-label-md font-semibold hover:bg-surface transition-colors"
-                      >
-                        Plan du site
-                      </a>
-                    </div>
+
                   </section>
 
                   <section id="securite" className="scroll-mt-28">
@@ -197,8 +178,6 @@ export default function PolitiqueConfidentialitePage() {
                     <div className="bg-[#1a2744] text-white rounded-2xl p-6 md:p-8 mt-6">
                       <p className="font-headline-md text-lg font-bold text-white">Gestion Immobilière de l&apos;Estrie</p>
                       <p className="font-body-md text-body-sm text-white/70 mt-2">
-                        123 rue King Ouest, Sherbrooke, QC J1H 1P8
-                        <br />
                         <a href="mailto:info@immoestrie.ca" className="text-accent-gold-dark hover:underline">
                           info@immoestrie.ca
                         </a>{" "}

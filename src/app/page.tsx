@@ -36,9 +36,6 @@ export default function HomePage() {
         {/* 2. À propos */}
         <About />
 
-        {/* 3. Barre de statistiques */}
-        <StatsBar />
-
         {/* 3. Services offerts */}
         <section id="services" aria-labelledby="titre-services">
           <Services />
@@ -49,10 +46,7 @@ export default function HomePage() {
           <WhyUs />
         </section>
 
-        {/* 5. Espace Locataires */}
-        <Locataires />
-
-        {/* 6. Témoignages clients */}
+        {/* 5. Témoignages clients */}
         <section aria-label="Témoignages de nos clients">
           <Testimonials />
         </section>
@@ -62,7 +56,10 @@ export default function HomePage() {
           <FAQ />
         </section>
 
-        {/* 7. Contact et formulaire */}
+        {/* 7. Espace Locataires — après la FAQ conformément à la demande */}
+        <Locataires />
+
+        {/* 8. Contact et formulaire */}
         <section id="contact" aria-labelledby="titre-contact">
           <Contact />
         </section>

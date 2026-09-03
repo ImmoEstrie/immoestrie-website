@@ -72,8 +72,8 @@ export interface Stat {
 }
 
 export const STATS: Stat[] = [
-  { value: "250", label: "Immeubles gérés", suffix: "+" },
-  { value: "98", label: "Clients satisfaits", suffix: "%" },
+  { value: "100", label: "Portes gérées", suffix: "+" },
+  { value: "500", label: "Portes gérées", suffix: "+" },
   { value: "10", label: "Ans d'expérience", suffix: "+" },
   { value: "24", label: "Disponibilité", suffix: "/7" },
 ];
@@ -264,12 +264,10 @@ export const FAQ_ITEMS: FaqItem[] = [
 // ─────────────────────────────────────────────
 export const COMPANY_INFO = {
   name: "Gestion Immobilière de l'Estrie",
-  address: "123, rue King Ouest, Bureau 200",
-  city: "Sherbrooke (Québec) J1H 1P3",
-  phone: "(819) 800-1234",
-  phoneRaw: "8198001234",
-  email: "info@gestionestrie.ca",
-  whatsapp: "18198001234",
+  phone: "(819) 975-4599",
+  phoneRaw: "8199754599",
+  email: "info@immoestrie.ca",
+  whatsapp: "18199754599",
   hours: "Lun–Ven : 8h30–17h | Urgences : 24/7",
   googleMapsUrl:
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44752.56!2d-71.90!3d45.40!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb7b36c2b45!2sSherbrooke%2C+QC!5e0!3m2!1sfr!2sca",

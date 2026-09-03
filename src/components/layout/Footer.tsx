@@ -46,22 +46,22 @@ export default function Footer() {
           <h4 className="font-label-md text-label-md text-white mb-4 font-bold">Navigation</h4>
           <ul className="space-y-2 font-body-md text-body-sm flex flex-col items-center md:items-start">
             <li>
-              <a className="link-underline text-[#c5cad6] hover:text-accent-gold-dark transition-colors" href="#accueil">
+              <a className="link-underline text-[#c5cad6] hover:text-accent-gold-dark transition-colors" href="/#accueil">
                 Accueil
               </a>
             </li>
             <li>
-              <a className="link-underline text-[#c5cad6] hover:text-accent-gold-dark transition-colors" href="#services">
+              <a className="link-underline text-[#c5cad6] hover:text-accent-gold-dark transition-colors" href="/#services">
                 Services
               </a>
             </li>
             <li>
-              <a className="link-underline text-[#c5cad6] hover:text-accent-gold-dark transition-colors" href="#pourquoi-nous">
+              <a className="link-underline text-[#c5cad6] hover:text-accent-gold-dark transition-colors" href="/#pourquoi-nous">
                 Pourquoi nous
               </a>
             </li>
             <li>
-              <a className="link-underline text-[#c5cad6] hover:text-accent-gold-dark transition-colors" href="#faq">
+              <a className="link-underline text-[#c5cad6] hover:text-accent-gold-dark transition-colors" href="/#faq">
                 FAQ
               </a>
             </li>
