@@ -1,21 +1,22 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 const slides = [
   "/images/hero/imag1-hero.jpg",
-  "/images/hero/imag 2-hero.jpg",
-  "/images/hero/imag 3-hero.jpg",
-  "/images/hero/imag 4-hero.jpg",
-  "/images/hero/imag 5-hero.jpg",
-  "/images/hero/imag 6-hero.jpg",
-  "/images/hero/imag 7-hero.jpg",
-  "/images/hero/imag 8-hero.jpg",
-  "/images/hero/imag 9-hero.jpg",
-  "/images/hero/imag 10-hero.jpg",
-  "/images/hero/imag 11-hero.jpg",
-  "/images/hero/imag 12-hero.jpg",
-  "/images/hero/imag 13-hero.jpg",
+  "/images/hero/imag-2-hero.jpg",
+  "/images/hero/imag-3-hero.jpg",
+  "/images/hero/imag-4-hero.jpg",
+  "/images/hero/imag-5-hero.jpg",
+  "/images/hero/imag-6-hero.jpg",
+  "/images/hero/imag-7-hero.jpg",
+  "/images/hero/imag-8-hero.jpg",
+  "/images/hero/imag-9-hero.jpg",
+  "/images/hero/imag-10-hero.jpg",
+  "/images/hero/imag-11-hero.jpg",
+  "/images/hero/imag-12-hero.jpg",
+  "/images/hero/imag-13-hero.jpg",
 ];
 
 export default function HeroCarousel() {
@@ -27,24 +28,22 @@ export default function HeroCarousel() {
     }, 4000);
     return () => clearInterval(slideInterval);
   }, []);
-      useEffect(() => {
-      slides.forEach((src) => {
-        const img = new Image();
-        img.src = src;
-      });
-    }, []);
 
   return (
     <div className="relative pt-32 pb-24 md:pt-48 md:pb-32 flex items-center min-h-screen bg-black overflow-hidden w-full">
-      {/* Carousel Images */}
+      {/* Carousel Images - next/image optimisé */}
       <div className="absolute inset-0 z-0">
         {slides.map((slide, index) => (
-          <div
-            key={index}
-            className={`w-full h-full bg-cover bg-center absolute inset-0 transition-opacity duration-1000 ${
+          <Image
+            key={slide}
+            src={slide}
+            alt="Gestion Immobilière de l'Estrie"
+            fill
+            priority={index === 0}
+            sizes="100vw"
+            className={`object-cover transition-opacity duration-1000 ease-in-out absolute inset-0 ${
               index === currentSlide ? "opacity-100 z-10" : "opacity-0 z-0"
             }`}
-            style={{ backgroundImage: `url('${slide}')` }}
           />
         ))}
         {/* Dark Overlay */}

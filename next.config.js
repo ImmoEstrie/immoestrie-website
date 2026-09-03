@@ -14,6 +14,14 @@ const nextConfig = {
         protocol: "https",
         hostname: "via.placeholder.com",
       },
+      {
+        protocol: "https",
+        hostname: "upload.wikimedia.org",
+      },
+      {
+        protocol: "https",
+        hostname: "cdn.jsdelivr.net",
+      },
     ],
     // Tailles de conteneurs pour le composant next/image
     deviceSizes: [375, 640, 768, 1024, 1280, 1440, 1920],

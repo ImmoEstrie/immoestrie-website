@@ -16,7 +16,6 @@ export default function ConditionsUtilisationPage() {
       <header>
         <Navbar />
       </header>
-      {/* Espace tampon sous la navbar (fixe/sticky) — agrandi pour que le titre H1 ne soit plus collé ni rogné */}
       <div className="h-20 md:h-24 w-full shrink-0" aria-hidden="true" />
 
       <main id="contenu-principal" className="bg-surface-container-lowest">
@@ -24,10 +23,10 @@ export default function ConditionsUtilisationPage() {
         <section className="bg-surface w-full border-b border-surface-variant/50">
           <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-16 md:py-24">
             <div className="max-w-3xl mx-auto text-center">
-              <h1 className="ml-2 font-display-lg text-[2.5rem] md:text-[3.5rem] leading-[1.15] tracking-tight font-bold text-[#1a2744] mb-4">
+              <h1 className="font-display-lg text-[2.5rem] md:text-[3.5rem] leading-[1.15] tracking-tight font-bold text-[#1a2744] mb-4">
                 Conditions <span className="text-primary">d&apos;utilisation</span>
               </h1>
-              <p className="ml-12 font-body-lg text-body-lg text-on-surface-variant leading-relaxed max-w-2xl">
+              <p className="font-body-lg text-body-lg text-on-surface-variant leading-relaxed max-w-2xl mx-auto">
                 En naviguant sur notre site et en utilisant nos services, vous acceptez les présentes conditions —
                 conçues pour protéger à la fois vos intérêts et les nôtres, en toute clarté.
               </p>
@@ -43,18 +42,13 @@ export default function ConditionsUtilisationPage() {
                 <p className="font-body-md text-body-sm leading-relaxed text-[#1a2744]">
                   <span className="font-bold">Note importante :</span> Si vous n&apos;acceptez pas ces conditions, merci
                   de ne pas utiliser le site. Pour toute question, écrivez à{" "}
-                  <a href="mailto:info@immoestrie.ca" className="text-primary underline hover:text-[#1e40af]">
-                    info@immoestrie.ca
-                  </a>
-                  .
+                  <a href="mailto:info@immoestrie.ca" className="text-primary underline hover:text-[#1e40af]">info@immoestrie.ca</a>.
                 </p>
               </div>
 
               <article className="space-y-10 font-body-md text-body-md leading-relaxed text-on-surface-variant">
                 <section className="scroll-mt-28">
-                  <h2 className="font-display-lg text-2xl md:text-[1.75rem] font-bold tracking-tight text-[#1a2744] mb-3">
-                    1. Acceptation des conditions
-                  </h2>
+                  <h2 className="font-display-lg text-2xl md:text-[1.75rem] font-bold tracking-tight text-[#1a2744] mb-3">1. Acceptation des conditions</h2>
                   <div className="w-12 h-[3px] bg-accent-gold-dark rounded-full mb-6" aria-hidden="true" />
                   <p>
                     L&apos;accès au site <span className="font-semibold text-[#1a2744]">immoestrie.ca</span> et
@@ -65,9 +59,7 @@ export default function ConditionsUtilisationPage() {
                 </section>
 
                 <section className="scroll-mt-28">
-                  <h2 className="font-display-lg text-2xl md:text-[1.75rem] font-bold tracking-tight text-[#1a2744] mb-3">
-                    2. Description des services
-                  </h2>
+                  <h2 className="font-display-lg text-2xl md:text-[1.75rem] font-bold tracking-tight text-[#1a2744] mb-3">2. Description des services</h2>
                   <div className="w-12 h-[3px] bg-accent-gold-dark rounded-full mb-6" aria-hidden="true" />
                   <p>
                     Gestion Immobilière de l&apos;Estrie offre des services de gestion locative et de copropriétés :
@@ -82,9 +74,7 @@ export default function ConditionsUtilisationPage() {
                 </section>
 
                 <section className="scroll-mt-28">
-                  <h2 className="font-display-lg text-2xl md:text-[1.75rem] font-bold tracking-tight text-[#1a2744] mb-3">
-                    3. Vos obligations
-                  </h2>
+                  <h2 className="font-display-lg text-2xl md:text-[1.75rem] font-bold tracking-tight text-[#1a2744] mb-3">3. Vos obligations</h2>
                   <div className="w-12 h-[3px] bg-accent-gold-dark rounded-full mb-6" aria-hidden="true" />
                   <ul className="list-disc pl-6 space-y-2 marker:text-primary">
                     <li>Fournir des informations exactes et à jour lors de vos demandes.</li>
@@ -95,9 +85,7 @@ export default function ConditionsUtilisationPage() {
                 </section>
 
                 <section className="scroll-mt-28">
-                  <h2 className="font-display-lg text-2xl md:text-[1.75rem] font-bold tracking-tight text-[#1a2744] mb-3">
-                    4. Propriété intellectuelle
-                  </h2>
+                  <h2 className="font-display-lg text-2xl md:text-[1.75rem] font-bold tracking-tight text-[#1a2744] mb-3">4. Propriété intellectuelle</h2>
                   <div className="w-12 h-[3px] bg-accent-gold-dark rounded-full mb-6" aria-hidden="true" />
                   <p>
                     Le contenu du site (textes, visuels, logo, design) est protégé. Toute reproduction, même partielle,
@@ -107,9 +95,7 @@ export default function ConditionsUtilisationPage() {
                 </section>
 
                 <section className="scroll-mt-28">
-                  <h2 className="font-display-lg text-2xl md:text-[1.75rem] font-bold tracking-tight text-[#1a2744] mb-3">
-                    5. Limitations et responsabilité
-                  </h2>
+                  <h2 className="font-display-lg text-2xl md:text-[1.75rem] font-bold tracking-tight text-[#1a2744] mb-3">5. Limitations et responsabilité</h2>
                   <div className="w-12 h-[3px] bg-accent-gold-dark rounded-full mb-6" aria-hidden="true" />
                   <p>
                     Nous mettons tout en œuvre pour l&apos;exactitude des informations, sans toutefois garantir l&apos;absence
@@ -126,9 +112,7 @@ export default function ConditionsUtilisationPage() {
                 </section>
 
                 <section className="scroll-mt-28">
-                  <h2 className="font-display-lg text-2xl md:text-[1.75rem] font-bold tracking-tight text-[#1a2744] mb-3">
-                    6. Droit applicable
-                  </h2>
+                  <h2 className="font-display-lg text-2xl md:text-[1.75rem] font-bold tracking-tight text-[#1a2744] mb-3">6. Droit applicable</h2>
                   <div className="w-12 h-[3px] bg-accent-gold-dark rounded-full mb-6" aria-hidden="true" />
                   <p>
                     Les présentes conditions sont régies par les lois du Québec et du Canada. Tout litige relève des
@@ -137,13 +121,9 @@ export default function ConditionsUtilisationPage() {
                   <div className="bg-[#1a2744] text-white rounded-2xl p-6 md:p-8 mt-6">
                     <p className="font-headline-md text-lg font-bold text-white">Gestion Immobilière de l&apos;Estrie</p>
                     <p className="font-body-md text-body-sm text-white/70 mt-2">
-                      <a href="mailto:info@immoestrie.ca" className="text-accent-gold-dark hover:underline">
-                        info@immoestrie.ca
-                      </a>{" "}
+                      <a href="mailto:info@immoestrie.ca" className="text-accent-gold-dark hover:underline">info@immoestrie.ca</a>{" "}
                       •{" "}
-                      <a href="tel:+18199754599" className="text-accent-gold-dark hover:underline">
-                        (819) 975-4599
-                      </a>
+                      <a href="tel:+18199754599" className="text-accent-gold-dark hover:underline">(819) 975-4599</a>
                     </p>
                   </div>
                 </section>

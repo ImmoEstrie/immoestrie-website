@@ -20,8 +20,8 @@ export default function About() {
 
           <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden shadow-card hover:shadow-card-hover transition-shadow">
             <Image
-              src="/images/a-propos-image.png"
-              alt="Immeubles gérés par Gestion immobilière de l'Estrie"
+              src="/images/a-propos-image.jpg"
+              alt="Immeubles gérés par Gestion immobilière de l'Estrie - vue d'un immeuble à Sherbrooke"
               fill
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"

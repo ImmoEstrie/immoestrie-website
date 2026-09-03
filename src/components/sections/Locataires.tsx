@@ -9,7 +9,7 @@ export default function Locataires() {
       cta: "Accéder au portail Plexflow",
       ctaIcon: "arrow_outward",
       href: "https://dashboard.plexflow.ca/app/en",
-      image: "/images/image-bg-card-plexflow.png",
+      image: "/images/image-bg-card-plexflow.jpg",
     },
     {
       badge: "CONTACT",

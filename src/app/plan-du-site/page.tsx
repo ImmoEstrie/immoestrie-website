@@ -45,7 +45,10 @@ const sitemap = [
     desc: "2 accès simplifiés",
     links: [
       { label: "Portail Plexflow", href: "/#locataires" },
-      { label: "Par courriel — info@immoestrie.ca", href: "mailto:info@immoestrie.ca" },
+      {
+        label: "Par courriel — info@immoestrie.ca",
+        href: "mailto:info@immoestrie.ca",
+      },
     ],
   },
   {
@@ -63,8 +66,14 @@ const sitemap = [
     href: "/politique-confidentialite",
     desc: "Informations juridiques",
     links: [
-      { label: "Politique de confidentialité", href: "/politique-confidentialite" },
-      { label: "Conditions d'utilisation", href: "/conditions-utilisation" },
+      {
+        label: "Politique de confidentialité",
+        href: "/politique-confidentialite",
+      },
+      {
+        label: "Conditions d'utilisation",
+        href: "/conditions-utilisation",
+      },
       { label: "Plan du site", href: "/plan-du-site" },
     ],
   },
@@ -74,23 +83,32 @@ export default function PlanDuSitePage() {
   return (
     <>
       <TopBar />
+
       <header>
         <Navbar />
       </header>
-      {/* Espace tampon sous la navbar (fixe/sticky) — agrandi pour que le titre H1 ne soit plus collé ni rogné */}
-      <div className="h-20 md:h-24 w-full shrink-0" aria-hidden="true" />
 
-      <main id="contenu-principal" className="bg-surface-container-lowest">
+      <div
+        className="h-20 md:h-24 w-full shrink-0"
+        aria-hidden="true"
+      />
+
+      <main
+        id="contenu-principal"
+        className="bg-surface-container-lowest"
+      >
         {/* Hero */}
         <section className="bg-surface w-full border-b border-surface-variant/50">
           <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-16 md:py-24">
             <div className="max-w-3xl mx-auto text-center">
-              <h1 className="ml-1 font-display-lg text-[2.5rem] md:text-[3.5rem] leading-[1.15] tracking-tight font-bold text-[#1a2744] mb-4">
+              <h1 className="font-display-lg text-[2.5rem] md:text-[3.5rem] leading-[1.15] tracking-tight font-bold text-[#1a2744] mb-4">
                 Plan du <span className="text-primary">site</span>
               </h1>
-              <p className="ml-10 font-body-lg text-body-lg text-on-surface-variant leading-relaxed max-w-2xl">
-                Accédez rapidement à l&apos;ensemble des contenus — pensé comme une carte claire de notre site, à
-                l&apos;image de notre gestion : structurée et transparente.
+
+              <p className="font-body-lg text-body-lg text-on-surface-variant leading-relaxed max-w-2xl mx-auto">
+                Accédez rapidement à l&apos;ensemble des contenus — pensé comme
+                une carte claire de notre site, à l&apos;image de notre gestion :
+                structurée et transparente.
               </p>
             </div>
           </div>
@@ -109,12 +127,21 @@ export default function PlanDuSitePage() {
                     <h2 className="font-display-lg text-xl font-bold tracking-tight text-[#1a2744] leading-tight">
                       {section.title}
                     </h2>
+
                     <span className="material-symbols-outlined text-primary/60 text-[22px] shrink-0 mt-1">
                       arrow_outward
                     </span>
                   </div>
-                  <p className="font-body-md text-body-sm text-on-surface-variant mb-6">{section.desc}</p>
-                  <div className="w-full h-px bg-outline-variant/30 mb-6" aria-hidden="true" />
+
+                  <p className="font-body-md text-body-sm text-on-surface-variant mb-6">
+                    {section.desc}
+                  </p>
+
+                  <div
+                    className="w-full h-px bg-outline-variant/30 mb-6"
+                    aria-hidden="true"
+                  />
+
                   <ul className="space-y-3 mt-auto">
                     {section.links.map((link) => (
                       <li key={link.label}>
@@ -122,17 +149,26 @@ export default function PlanDuSitePage() {
                           href={link.href}
                           className="group inline-flex items-center gap-2 font-label-md text-label-sm font-semibold text-primary hover:text-accent-gold-dark transition-colors"
                         >
-                          <span className="w-1.5 h-1.5 rounded-full bg-accent-gold-dark group-hover:scale-125 transition-transform" aria-hidden="true" />
+                          <span
+                            className="w-1.5 h-1.5 rounded-full bg-accent-gold-dark group-hover:scale-125 transition-transform"
+                            aria-hidden="true"
+                          />
+
                           {link.label}
                         </a>
                       </li>
                     ))}
                   </ul>
+
                   <a
                     href={section.href}
                     className="mt-6 inline-flex items-center gap-1.5 font-label-md text-label-sm font-bold text-[#1a2744] hover:text-primary transition-colors"
                   >
-                    Voir la section <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
+                    Voir la section
+
+                    <span className="material-symbols-outlined text-[16px]">
+                      arrow_forward
+                    </span>
                   </a>
                 </div>
               ))}
@@ -141,11 +177,16 @@ export default function PlanDuSitePage() {
             {/* Raccourci contact */}
             <div className="mt-12 bg-[#1a2744] rounded-2xl p-6 md:p-8 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
               <div>
-                <h3 className="font-display-lg text-xl font-bold text-white">Vous ne trouvez pas ce que vous cherchez ?</h3>
+                <h3 className="font-display-lg text-xl font-bold text-white">
+                  Vous ne trouvez pas ce que vous cherchez ?
+                </h3>
+
                 <p className="font-body-md text-body-sm text-white/70 mt-2">
-                  Notre équipe vous répond en moins de 24h — ou 24h/24 via le portail pour les urgences.
+                  Notre équipe vous répond en moins de 24h — ou 24h/24 via le
+                  portail pour les urgences.
                 </p>
               </div>
+
               <div className="flex flex-col sm:flex-row gap-3 shrink-0">
                 <a
                   href="mailto:info@immoestrie.ca"
@@ -153,6 +194,7 @@ export default function PlanDuSitePage() {
                 >
                   info@immoestrie.ca
                 </a>
+
                 <a
                   href="tel:+18199754599"
                   className="inline-flex items-center justify-center gap-2 border border-white/20 text-white px-6 py-3 rounded-lg font-label-md text-label-md font-semibold hover:bg-white/10 transition-colors"

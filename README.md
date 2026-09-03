@@ -4,7 +4,7 @@ Site vitrine professionnel pour **Gestion Immobilière de l'Estrie**, entreprise
 
 ---
 
-## 🚀 Installation & Démarrage
+## 🚀 Installation & Démarragen
 
 ### Prérequis
 - [Node.js](https://nodejs.org/) v18+ 
